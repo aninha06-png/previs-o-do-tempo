@@ -1,0 +1,147 @@
+/* CONFIGURAÇÃO GERAL DAS DIVS */
+
+div {
+    display: inline-block;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+/* PAINEL PRINCIPAL */
+
+#painel {
+    width: 600px;
+    height: auto;
+    border: 2px solid black;
+    font-size: 0;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    width: 596px;
+    height: 100px;
+    background-color: #20232b;
+    color: white;
+    border: none;
+    text-align: center;
+    position: relative;
+}
+
+/* SELETOR DESCENDENTE */
+
+.cabecalho .titulo {
+    display: block;
+    width: auto;
+    height: auto;
+    border: none;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.cabecalho .data {
+    display: block;
+    width: auto;
+    height: auto;
+    border: none;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* ÁREA DOS CARDS */
+
+.grade {
+    width: 596px;
+    height: 400px;
+    border: none;
+    font-size: 0;
+}
+
+/* SELETOR DE FILHO */
+
+#painel > .grade {
+    display: block;
+}
+
+/* CONFIGURAÇÃO DOS CARDS */
+
+.card {
+    width: 198px;
+    height: 200px;
+    text-align: center;
+    color: white;
+    padding-top: 25px;
+    font-family: Arial, sans-serif;
+}
+
+/* ELEMENTOS INTERNOS DOS CARDS */
+
+.card > div {
+    display: block;
+    width: auto;
+    height: auto;
+    border: none;
+}
+
+/* ÍCONES */
+
+.icone {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+/* NOMES */
+
+.nome {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* VALORES */
+
+.valor {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* CORES DE CADA CARD */
+
+.temperatura {
+    background-color: #1261e8;
+}
+
+.umidade {
+    background-color: #008b16;
+}
+
+.vento {
+    background-color: #5714c9;
+}
+
+.condicao {
+    background-color: #f28c00;
+}
+
+.amanha {
+    background-color: #00a6a6;
+}
+
+.localizacao {
+    background-color: #e91e63;
+}
+
+/* SELETOR ESTRUTURAL */
+
+.card:nth-child(2) {
+    border: 2px solid #333;
+}
+
+/* PSEUDO-CLASSE */
+
+.card:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
